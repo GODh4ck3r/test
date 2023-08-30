@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket.io Chat Example</title>
+</head>
+
+<body>
+    <h1>Test</h1>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        socket.on('disconnect', (msg) => {
+            console.log("disconnected")
+        });
+    </script>
+</body>
+
+</html>
